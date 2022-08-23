@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="Vector.png">
+      <link rel="stylesheet" href="styles.css">
+      <title>Encriptador</title>
+</head>
+
+<body>
+
+
+  <div class="welcome-name">
+           <script>
+            var name = prompt("Escriba su nombre por favor: ");
+            document.write('<h1 style="text-align: center;">BIENVENIDO AL ENCRIPTADOR: </h1>');
+            document.write(name.toUpperCase());
+           </script>
+  </div>
+    
+     
+  <div class="general"> 
+  <div class="paneles">
+      <h4>Escribe el mensaje que quieras encriptar/desencriptar aqui abajo:</h4>
+      <textarea placeholder="Escriba su mensaje aqui" class="txtnor" id="txtnormal" name="txtnormal" cols="60" rows="10"></textarea>
+      <h5>Solo minúsculas, sin acento y no caracteres especiales</h5>
+
+      <h4>Su mensaje es:</h4>
+      <textarea placeholder="Aqui aparece su mensaje" class="txtenc" id="txtencrip"  name="txtencrip" cols="60" rows="10"></textarea>
+
+  </div>
+
+  <div class="imagen">
+      <textarea  class="txtimgc" id="txtimg"  name="txtimg" cols="30" rows="15" readonly="readonly"></textarea>
+  </div>
+</div>  
+ 
+      <br>
+       
+  <div class="btn-group">
+      <button  id="btn-encriptar" onclick="btnEncriptar()">ENCRIPTAR</button>
+      <button  id="btn-desencriptar" onclick="btnDesencriptar()">DESENCRIPTAR</button>
+      <button  id="btn-copia" onclick="copiarText()">COPIAR TEXTO</button>
+  </div>
+
+      <footer>
+            <p>Autor: Francisco Emmanuel Martinez Castellanos</p>
+            <p>Github: <a href="https://github.com/EmmanuelMtzCas">Emmanuel MtzCas</a></p>
+            <p>Código del proyecto: <a href="https://github.com/EmmanuelMtzCas/Reto-1-Encriptador">Click aqui</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/francisco-emmanuel-martínez-castellanos-23b4a4246/">Mi LinkedIn</a></p>
+      </footer>
+
+   <script src="script.js"> </script>
+
+</body>
+</html>
